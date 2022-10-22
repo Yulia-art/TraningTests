@@ -1,0 +1,29 @@
+{
+  "_index": "cardsmile-prod-app-logs-2022.08-shrinked",
+  "_type": "doc",
+  "_id": "emOSK38BumZa2nvyR3u6",
+  "_score": 1,
+  "_source": {
+    "host": "cardsmile05",
+    "event_source": "gelf",
+    "level": 2,
+    "app_version": "V2",
+    "@version": "1",
+    "message_truncated": "Type error: Argument 6 passed to RightWay\\Module\\Order\\Factory\\OrderInquiryFactory::create() must be an instance of RightWay\\Mod",
+    "ctxt_exception": "{\"class\":\"Symfony\\\\Component\\\\Debug\\\\Exception\\\\FatalThrowableError\",\"message\":\"Type error: Argument 6 passed to RightWay\\\\Module\\\\Order\\\\Factory\\\\OrderInquiryFactory::create() must be an instance of RightWay\\\\Module\\\\Order\\\\Dto\\\\DeliveryInfoDto, null given, called in /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Module/Order/Handler/CreateOrderHandler.php on line 218\",\"code\":0,\"file\":\"/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Module/Order/Factory/OrderInquiryFactory.php:28\",\"trace\":[\"/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Module/Order/Handler/CreateOrderHandler.php:218\",\"/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Bundle/ExternalApiBundle/Controller/OrderController.php:96\",\"/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:151\",\"/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php:68\",\"/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php:200\",\"/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/web/external/app.php:19\"]}",
+    "@timestamp": "2022-02-24T11:51:20.930Z",
+    "version": "1.0",
+    "facility": "app",
+    "message": "Type error: Argument 6 passed to RightWay\\Module\\Order\\Factory\\OrderInquiryFactory::create() must be an instance of RightWay\\Module\\Order\\Dto\\DeliveryInfoDto, null given, called in /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Module/Order/Handler/CreateOrderHandler.php on line 218 #0 /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Module/Order/Handler/CreateOrderHandler.php(218): RightWay\\Module\\Order\\Factory\\OrderInquiryFactory::create(Object(RightWay\\Module\\Brand\\Entity\\Brand), Object(Proxies\\__CG__\\RightWay\\Module\\Shop\\Entity\\Shop), Object(RightWay\\Module\\Card\\Entity\\Card), Object(RightWay\\CatalogApi\\Dto\\CatalogResponse\\CategoryItem), Object(RightWay\\Module\\Order\\Dto\\ProductDto), NULL, Object(RightWay\\Module\\Order\\Enum\\OrderStatus), 2302, Object(DateTime))\n#1 /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Bundle/ExternalApiBundle/Controller/OrderController.php(96): RightWay\\Module\\Order\\Handler\\CreateOrderHandler->handle(Object(RightWay\\Module\\Order\\Dto\\CreateOrderRequest))\n#2 /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php(151): RightWay\\Bundle\\ExternalApiBundle\\Controller\\OrderController->createOrderAction(Object(RightWay\\Module\\Order\\Dto\\CreateOrderRequest), Object(Symfony\\Component\\Validator\\ConstraintViolationList))\n#3 /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/HttpKernel.php(68): Symfony\\Component\\HttpKernel\\HttpKernel->handleRaw(Object(Symfony\\Component\\HttpFoundation\\Request), 1)\n#4 /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/vendor/symfony/symfony/src/Symfony/Component/HttpKernel/Kernel.php(200): Symfony\\Component\\HttpKernel\\HttpKernel->handle(Object(Symfony\\Component\\HttpFoundation\\Request), 1, true)\n#5 /home/apps/rightway/rightway-external-api/V2/releases/3.73.1/web/external/app.php(19): Symfony\\Component\\HttpKernel\\Kernel->handle(Object(Symfony\\Component\\HttpFoundation\\Request))\n#6 {main}",
+    "app_name": "rightway-external-api",
+    "file": "/home/apps/rightway/rightway-external-api/V2/releases/3.73.1/src/RightWay/Module/Order/Factory/OrderInquiryFactory.php",
+    "level_keyword": "crit",
+    "line": "28",
+    "source_host": "192.168.236.25"
+  },
+  "fields": {
+    "@timestamp": [
+      "2022-02-24T11:51:20.930Z"
+    ]
+  }
+}
